@@ -4,7 +4,6 @@
     <title>tinyopenjam</title>
 
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Droid+Sans" rel="stylesheet" type="text/css">
 
     <style>
       body {
@@ -14,8 +13,8 @@
         max-width: 900px;
       }
 
-      hr {
-        border: 1px solid black;
+      p, h1, h2, h3, footer {
+        padding: 0 10px;
       }
 
       a {
@@ -29,22 +28,10 @@
       header {
         text-align: right;
         white-space: nowrap;
-        height: 100px;
-      }
-
-      header .hand {
-        padding: 10px;
-        line-height: 100px;
       }
 
       footer {
         padding-bottom: 10px;
-      }
-
-      .hand {
-        font-family: "Droid Sans", sans-serif;
-        float: right;
-        height: 100%;
       }
 
       .tiny {
@@ -60,21 +47,17 @@
       }
 
       #tov-playlist {
-        width: 900px;
-        height: 563px;
+        max-width: 900px;
+        max-height: 563px;
+        width: 100vw;
+        height: 62.5vw;
       }
     </style>
   </head>
   <body>
     <header>
-      <div class="hand">
-        o/
-      </div>
-
       <h1>
-        <span class="tiny">Tiny</span><br>
-        <span class="open">Open</span><br>
-        <span class="jam">Jam</span><br>
+        <span class="tiny">Tiny</span><span class="open">Open</span><span class="jam">Jam</span>
       </h1>
     </header>
 
@@ -159,16 +142,11 @@
     <iframe id="tov-playlist" src="https://www.youtube.com/embed/videoseries?list=PLdXSy09brydz3SMM-8p8-6lRXMpLWKi6A"
       frameborder="0" allowfullscreen></iframe>
 
-    <hr>
-
     <footer>
       <span class="tiny">Tiny</span><span class="open">Open</span><span class="jam">Jam</span>
       spawned from the mind of <a href="https://www.heymrbass.com">Dan Bergren</a>.
       This site has been worked on in <a href="https://github.com/tinyopenjam/tinyopenjam.github.io/releases">3</a>
       jams and counting.
-        <div class="hand">
-          o/
-        </div>
     </footer>
   </body>
 </html>
